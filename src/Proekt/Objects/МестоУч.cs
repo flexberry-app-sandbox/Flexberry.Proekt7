@@ -32,17 +32,22 @@ namespace IIS.Proekt
     [View("МестоУчE", new string[] {
             "СправСотр as \'Фио сотрудника\'",
             "СправСотр.Фио as \'Фио сотрудника\'",
-            "СправСотр.СправДолж.Должность as \'Должность\'"})]
+            "СправСотр.СправДолж.Должность as \'Должность\'",
+            "КлассУч as \'Класс ученика\'",
+            "КлассУч.Назв as \'Класс ученика\'"})]
     [AssociatedDetailViewAttribute("МестоУчE", "ТчМестоУч", "ТчМестоУчE", true, "", "Сведения об ученике", true, new string[] {
             ""})]
     [MasterViewDefineAttribute("МестоУчE", "СправСотр", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио сотрудника")]
     [View("МестоУчL", new string[] {
             "СправСотр.Фио as \'Фио сотрудника\'",
-            "СправСотр.СправДолж.Должность as \'Должность\'"})]
+            "СправСотр.СправДолж.Должность as \'Должность\'",
+            "КлассУч.Назв as \'Класс ученика\'"})]
     public class МестоУч : ICSSoft.STORMNET.DataObject
     {
         
         private IIS.Proekt.СправСотр fСправСотр;
+        
+        private IIS.Proekt.КлассУч fКлассУч;
         
         private IIS.Proekt.DetailArrayOfТчМестоУч fТчМестоУч;
         
@@ -50,6 +55,40 @@ namespace IIS.Proekt
 
         // *** End programmer edit section *** (МестоУч CustomMembers)
 
+        
+        /// <summary>
+        /// Место уч.
+        /// </summary>
+        // *** Start programmer edit section *** (МестоУч.КлассУч CustomAttributes)
+
+        // *** End programmer edit section *** (МестоУч.КлассУч CustomAttributes)
+        [PropertyStorage(new string[] {
+                "КлассУч"})]
+        [NotNull()]
+        public virtual IIS.Proekt.КлассУч КлассУч
+        {
+            get
+            {
+                // *** Start programmer edit section *** (МестоУч.КлассУч Get start)
+
+                // *** End programmer edit section *** (МестоУч.КлассУч Get start)
+                IIS.Proekt.КлассУч result = this.fКлассУч;
+                // *** Start programmer edit section *** (МестоУч.КлассУч Get end)
+
+                // *** End programmer edit section *** (МестоУч.КлассУч Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (МестоУч.КлассУч Set start)
+
+                // *** End programmer edit section *** (МестоУч.КлассУч Set start)
+                this.fКлассУч = value;
+                // *** Start programmer edit section *** (МестоУч.КлассУч Set end)
+
+                // *** End programmer edit section *** (МестоУч.КлассУч Set end)
+            }
+        }
         
         /// <summary>
         /// Место уч.

@@ -98,6 +98,8 @@ CREATE TABLE "МестоУч"
 
 	"СправСотр" RAW(16) NOT NULL,
 
+	"КлассУч" RAW(16) NOT NULL,
+
 	 PRIMARY KEY ("primaryKey")
 ) ;
 
@@ -397,6 +399,11 @@ ALTER TABLE "МестоУч"
 	ADD CONSTRAINT "МестоУч_FСпра_5273" FOREIGN KEY ("СправСотр") REFERENCES "СправСотр" ("primaryKey");
 
 CREATE INDEX "МестоУч_IСпра_3172" on "МестоУч" ("СправСотр");
+
+ALTER TABLE "МестоУч"
+	ADD CONSTRAINT "МестоУч_FКлас_2283" FOREIGN KEY ("КлассУч") REFERENCES "КлассУч" ("primaryKey");
+
+CREATE INDEX "МестоУч_IКлассУч" on "МестоУч" ("КлассУч");
 
 ALTER TABLE "СправУч"
 	ADD CONSTRAINT "СправУч_FКлас_5016" FOREIGN KEY ("КлассУч") REFERENCES "КлассУч" ("primaryKey");

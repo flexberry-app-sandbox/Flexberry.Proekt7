@@ -81,6 +81,8 @@ CREATE TABLE [МестоУч] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
 
+	 [КлассУч] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [СправСотр] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))

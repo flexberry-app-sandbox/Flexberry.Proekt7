@@ -54,6 +54,7 @@ CREATE TABLE ТчМестоУч (
 CREATE TABLE МестоУч (
  primaryKey UUID NOT NULL,
  СправСотр UUID NOT NULL,
+ КлассУч UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -215,6 +216,9 @@ CREATE INDEX Index4ed11df511b18fb2dcb66ceed0c603f6a1e9d79e on ТчМестоУч
 
  ALTER TABLE МестоУч ADD CONSTRAINT FK1dd84bffe760bdff1948ae4a424eb71511ab627a FOREIGN KEY (СправСотр) REFERENCES СправСотр; 
 CREATE INDEX Index1dd84bffe760bdff1948ae4a424eb71511ab627a on МестоУч (СправСотр); 
+
+ ALTER TABLE МестоУч ADD CONSTRAINT FK02207ede04c6393ebd1a21c08552e99b79c175aa FOREIGN KEY (КлассУч) REFERENCES КлассУч; 
+CREATE INDEX Index02207ede04c6393ebd1a21c08552e99b79c175aa on МестоУч (КлассУч); 
 
  ALTER TABLE СправУч ADD CONSTRAINT FKa68295ddc783f297389148f0d145237efa03c770 FOREIGN KEY (КлассУч) REFERENCES КлассУч; 
 CREATE INDEX Indexa68295ddc783f297389148f0d145237efa03c770 on СправУч (КлассУч); 
