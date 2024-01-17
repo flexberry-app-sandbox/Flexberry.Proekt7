@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "КлассУч",
+      "projection": "КлассУчL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправРод",
+      "projection": "СправРодL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Номер",
+      "projection": "НомерL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Справочник ученики",
+  "name": "IISProektСправУчE",
+  "className": "СправУчE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-справ-уч",
+      "modelProjection": "СправУчE"
+    }
+  ]
+}

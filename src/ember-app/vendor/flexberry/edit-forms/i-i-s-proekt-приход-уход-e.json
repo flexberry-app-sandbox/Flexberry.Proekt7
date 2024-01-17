@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправУч",
+      "projection": "СправУчL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Расписание",
+      "projection": "РасписаниеL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Функция: Регистрация прихода/ухода ученика",
+  "name": "IISProektПриходУходE",
+  "className": "ПриходУходE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-приход-уход",
+      "modelProjection": "ПриходУходE"
+    }
+  ]
+}

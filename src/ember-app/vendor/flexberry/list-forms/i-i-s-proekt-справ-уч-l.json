@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-справ-уч-e",
+  "editForm": "i-i-s-proekt-справ-уч-e",
+  "external": false,
+  "caption": "Справочник ученики",
+  "name": "IISProektСправУчL",
+  "className": "СправУчL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-справ-уч",
+      "modelProjection": "СправУчL"
+    }
+  ]
+}

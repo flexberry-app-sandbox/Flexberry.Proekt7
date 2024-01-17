@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISProektКлассУч",
+  "modelName": "i-i-s-proekt-класс-уч",
+  "className": "КлассУч",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "назв",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлассУчE",
+      "modelName": "i-i-s-proekt-класс-уч",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Название класса",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КлассУчL",
+      "modelName": "i-i-s-proekt-класс-уч",
+      "attrs": [
+        {
+          "name": "назв",
+          "caption": "Название класса",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

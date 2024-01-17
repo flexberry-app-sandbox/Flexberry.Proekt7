@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISProektПросмотр",
+  "modelName": "i-i-s-proekt-просмотр",
+  "className": "Просмотр",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "время",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справРод",
+      "relatedTo": "i-i-s-proekt-справ-род",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "ученик",
+      "relatedTo": "i-i-s-proekt-ученик",
+      "inverse": "просмотр"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ПросмотрE",
+      "modelName": "i-i-s-proekt-просмотр",
+      "attrs": [
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправРод",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио родителя",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Фио родителя",
+          "name": "справРод",
+          "relatedTo": "i-i-s-proekt-справ-род",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "УченикE",
+          "caption": "Ученик",
+          "name": "ученик",
+          "relatedTo": "i-i-s-proekt-ученик",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ПросмотрL",
+      "modelName": "i-i-s-proekt-просмотр",
+      "attrs": [
+        {
+          "name": "время",
+          "caption": "Время",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправРод",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио родителя",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фио родителя",
+          "name": "справРод",
+          "relatedTo": "i-i-s-proekt-справ-род",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

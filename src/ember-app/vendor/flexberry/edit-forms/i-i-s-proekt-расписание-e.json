@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник расписание",
+  "name": "IISProektРасписаниеE",
+  "className": "РасписаниеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-расписание",
+      "modelProjection": "РасписаниеE"
+    }
+  ]
+}

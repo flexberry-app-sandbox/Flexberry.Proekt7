@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISProektСправСотр",
+  "modelName": "i-i-s-proekt-справ-сотр",
+  "className": "СправСотр",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фио",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справДолж",
+      "relatedTo": "i-i-s-proekt-справ-долж",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправСотрE",
+      "modelName": "i-i-s-proekt-справ-сотр",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио сотрудника",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправДолж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должности",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Должности",
+          "name": "справДолж",
+          "relatedTo": "i-i-s-proekt-справ-долж",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "СправСотрL",
+      "modelName": "i-i-s-proekt-справ-сотр",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Фио сотрудника",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправДолж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должности",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Должности",
+          "name": "справДолж",
+          "relatedTo": "i-i-s-proekt-справ-долж",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

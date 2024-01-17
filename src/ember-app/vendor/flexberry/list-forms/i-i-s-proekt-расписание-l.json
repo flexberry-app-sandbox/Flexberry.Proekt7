@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-расписание-e",
+  "editForm": "i-i-s-proekt-расписание-e",
+  "external": false,
+  "caption": "Справочник расписание",
+  "name": "IISProektРасписаниеL",
+  "className": "РасписаниеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-расписание",
+      "modelProjection": "РасписаниеL"
+    }
+  ]
+}

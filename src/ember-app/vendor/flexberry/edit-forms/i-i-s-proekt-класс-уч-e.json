@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник классы",
+  "name": "IISProektКлассУчE",
+  "className": "КлассУчE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-класс-уч",
+      "modelProjection": "КлассУчE"
+    }
+  ]
+}

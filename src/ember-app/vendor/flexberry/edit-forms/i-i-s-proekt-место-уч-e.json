@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправСотр",
+      "projection": "СправСотрL",
+      "detailModelName": null
+    },
+    {
+      "master": "справУч",
+      "displayAttributeName": "фио ученика",
+      "required": true,
+      "relationName": "ТчМестоУч.СправУч",
+      "projection": "СправУчL",
+      "detailModelName": "i-i-s-proekt-тч-место-уч"
+    }
+  ],
+  "external": false,
+  "caption": "Класс ученика",
+  "name": "IISProektМестоУчE",
+  "className": "МестоУчE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-место-уч",
+      "modelProjection": "МестоУчE"
+    }
+  ]
+}

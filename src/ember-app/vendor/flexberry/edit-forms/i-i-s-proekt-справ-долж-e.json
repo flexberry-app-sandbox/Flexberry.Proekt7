@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Справочник должности",
+  "name": "IISProektСправДолжE",
+  "className": "СправДолжE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-справ-долж",
+      "modelProjection": "СправДолжE"
+    }
+  ]
+}

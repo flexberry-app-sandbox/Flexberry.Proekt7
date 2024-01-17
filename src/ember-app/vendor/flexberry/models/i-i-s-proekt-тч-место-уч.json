@@ -1,0 +1,124 @@
+﻿{
+  "name": "IISProektТчМестоУч",
+  "modelName": "i-i-s-proekt-тч-место-уч",
+  "className": "ТчМестоУч",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справУч",
+      "relatedTo": "i-i-s-proekt-справ-уч",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "местоУч",
+      "relatedTo": "i-i-s-proekt-место-уч",
+      "inverse": "тчМестоУч"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТчМестоУчE",
+      "modelName": "i-i-s-proekt-тч-место-уч",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Фио ученика",
+          "lookupValueField": "фио ученика",
+          "relationName": "СправУч",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СправУч.КлассУч",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "назв",
+                  "caption": "Класс ученика",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "классУч",
+              "relatedTo": "i-i-s-proekt-класс-уч",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СправУч.Номер",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "наименование",
+                  "caption": "Номер карты",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "номер",
+              "relatedTo": "i-i-s-proekt-номер",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СправУч.СправРод",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "фио",
+                  "caption": "Фио родителя",
+                  "hidden": false,
+                  "index": 4
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "справРод",
+              "relatedTo": "i-i-s-proekt-справ-род",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио ученика",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Фио ученика",
+          "name": "справУч",
+          "relatedTo": "i-i-s-proekt-справ-уч",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

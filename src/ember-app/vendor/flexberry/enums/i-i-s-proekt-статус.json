@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Proekt",
+  "className": "Статус",
+  "enumObjects": {
+    "Вход": "",
+    "Выход": ""
+  }
+}

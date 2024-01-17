@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Номер карты",
+  "name": "IISProektНомерE",
+  "className": "НомерE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-номер",
+      "modelProjection": "НомерE"
+    }
+  ]
+}

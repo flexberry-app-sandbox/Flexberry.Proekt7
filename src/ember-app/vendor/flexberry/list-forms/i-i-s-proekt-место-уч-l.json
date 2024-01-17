@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-место-уч-e",
+  "editForm": "i-i-s-proekt-место-уч-e",
+  "external": false,
+  "caption": "Класс ученика",
+  "name": "IISProektМестоУчL",
+  "className": "МестоУчL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-место-уч",
+      "modelProjection": "МестоУчL"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+﻿{
+  "name": "IISProektМестоУч",
+  "modelName": "i-i-s-proekt-место-уч",
+  "className": "МестоУч",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справСотр",
+      "relatedTo": "i-i-s-proekt-справ-сотр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тчМестоУч",
+      "relatedTo": "i-i-s-proekt-тч-место-уч",
+      "inverse": "местоУч"
+    }
+  ],
+  "projections": [
+    {
+      "name": "МестоУчE",
+      "modelName": "i-i-s-proekt-место-уч",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "Фио сотрудника",
+          "lookupValueField": "фио сотрудника",
+          "relationName": "СправСотр",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СправСотр.СправДолж",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "должность",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "справДолж",
+              "relatedTo": "i-i-s-proekt-справ-долж",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио сотрудника",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Фио сотрудника",
+          "name": "справСотр",
+          "relatedTo": "i-i-s-proekt-справ-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТчМестоУчE",
+          "caption": "Сведения об ученике",
+          "name": "тчМестоУч",
+          "relatedTo": "i-i-s-proekt-тч-место-уч",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "МестоУчL",
+      "modelName": "i-i-s-proekt-место-уч",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправСотр",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "СправСотр.СправДолж",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "должность",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 1
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "справДолж",
+              "relatedTo": "i-i-s-proekt-справ-долж",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фио",
+              "caption": "Фио сотрудника",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фио сотрудника",
+          "name": "справСотр",
+          "relatedTo": "i-i-s-proekt-справ-сотр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

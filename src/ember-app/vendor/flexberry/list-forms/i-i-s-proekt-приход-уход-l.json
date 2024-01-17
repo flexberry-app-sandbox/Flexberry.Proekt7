@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-приход-уход-e",
+  "editForm": "i-i-s-proekt-приход-уход-e",
+  "external": false,
+  "caption": "Функция: Регистрация прихода/ухода ученика",
+  "name": "IISProektПриходУходL",
+  "className": "ПриходУходL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-приход-уход",
+      "modelProjection": "ПриходУходL"
+    }
+  ]
+}

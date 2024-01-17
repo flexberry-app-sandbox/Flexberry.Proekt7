@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISProektРасписание",
+  "modelName": "i-i-s-proekt-расписание",
+  "className": "Расписание",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "периодДо",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "периодОт",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "урок",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РасписаниеE",
+      "modelName": "i-i-s-proekt-расписание",
+      "attrs": [
+        {
+          "name": "урок",
+          "caption": "Номер урока",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "периодОт",
+          "caption": "Период От",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "периодДо",
+          "caption": "Период До",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "РасписаниеL",
+      "modelName": "i-i-s-proekt-расписание",
+      "attrs": [
+        {
+          "name": "урок",
+          "caption": "Номер урока",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "периодОт",
+          "caption": "Период От",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "периодДо",
+          "caption": "Период До",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

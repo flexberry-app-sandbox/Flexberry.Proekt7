@@ -1,0 +1,126 @@
+<h3 class="ui header">{{t "forms.i-i-s-proekt-справ-уч-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.фио
+      class=(if (v-get validationModel "фио" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-справ-уч-e.фио-caption")
+      data-test-i-i-s-proekt-справ-уч-e-фио=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "фио" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proekt-справ-уч-e.датаРожд-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаРожд
+      class=(if (v-get validationModel "датаРожд" "isInvalid") "error")
+      data-test-i-i-s-proekt-справ-уч-e-датаРожд=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаРожд" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proekt-справ-уч-e.классУч-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.классУч
+      relationName="классУч"
+      projection="КлассУчL"
+      title=(t "forms.i-i-s-proekt-справ-уч-e.классУч-caption")
+      readonly=readonly
+      componentName="классУчLookup"
+      class=(if (v-get validationModel "классУч" "isInvalid") "error")
+      data-test-i-i-s-proekt-справ-уч-e-классУч=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "классУч" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.классУч.назв
+      class=(if (v-get validationModel.классУч "назв" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-справ-уч-e.классУч.назв-caption")
+      data-test-i-i-s-proekt-справ-уч-e-классУч-назв=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.классУч "назв" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proekt-справ-уч-e.справРод-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.справРод
+      relationName="справРод"
+      projection="СправРодL"
+      title=(t "forms.i-i-s-proekt-справ-уч-e.справРод-caption")
+      readonly=readonly
+      componentName="справРодLookup"
+      class=(if (v-get validationModel "справРод" "isInvalid") "error")
+      data-test-i-i-s-proekt-справ-уч-e-справРод=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "справРод" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.справРод.фио
+      class=(if (v-get validationModel.справРод "фио" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-справ-уч-e.справРод.фио-caption")
+      data-test-i-i-s-proekt-справ-уч-e-справРод-фио=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.справРод "фио" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-proekt-справ-уч-e.номер-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.номер
+      relationName="номер"
+      projection="НомерL"
+      title=(t "forms.i-i-s-proekt-справ-уч-e.номер-caption")
+      readonly=readonly
+      componentName="номерLookup"
+      class=(if (v-get validationModel "номер" "isInvalid") "error")
+      data-test-i-i-s-proekt-справ-уч-e-номер=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номер" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.номер.наименование
+      class=(if (v-get validationModel.номер "наименование" "isInvalid") "error")
+      label=(t "forms.i-i-s-proekt-справ-уч-e.номер.наименование-caption")
+      data-test-i-i-s-proekt-справ-уч-e-номер-наименование=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.номер "наименование" "message")}}
+  </div>
+</form>

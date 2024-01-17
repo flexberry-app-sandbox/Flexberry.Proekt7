@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-справ-сотр-e",
+  "editForm": "i-i-s-proekt-справ-сотр-e",
+  "external": false,
+  "caption": "Справочник сотрудники",
+  "name": "IISProektСправСотрL",
+  "className": "СправСотрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-справ-сотр",
+      "modelProjection": "СправСотрL"
+    }
+  ]
+}

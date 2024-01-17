@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISProektНомер",
+  "modelName": "i-i-s-proekt-номер",
+  "className": "Номер",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "НомерE",
+      "modelName": "i-i-s-proekt-номер",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "НомерL",
+      "modelName": "i-i-s-proekt-номер",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

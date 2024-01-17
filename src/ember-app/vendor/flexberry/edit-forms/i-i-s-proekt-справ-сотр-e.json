@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправДолж",
+      "projection": "СправДолжL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Справочник сотрудники",
+  "name": "IISProektСправСотрE",
+  "className": "СправСотрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-справ-сотр",
+      "modelProjection": "СправСотрE"
+    }
+  ]
+}

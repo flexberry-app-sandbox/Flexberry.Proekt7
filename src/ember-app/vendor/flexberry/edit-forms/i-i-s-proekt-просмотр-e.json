@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправРод",
+      "projection": "СправРодL",
+      "detailModelName": null
+    },
+    {
+      "master": "приходУход",
+      "displayAttributeName": "фио ученика",
+      "required": true,
+      "relationName": "Ученик.ПриходУход",
+      "projection": "ПриходУходL",
+      "detailModelName": "i-i-s-proekt-ученик"
+    }
+  ],
+  "external": false,
+  "caption": "Функция: Просмотр и контроль прихода/ухода ученика",
+  "name": "IISProektПросмотрE",
+  "className": "ПросмотрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-просмотр",
+      "modelProjection": "ПросмотрE"
+    }
+  ]
+}

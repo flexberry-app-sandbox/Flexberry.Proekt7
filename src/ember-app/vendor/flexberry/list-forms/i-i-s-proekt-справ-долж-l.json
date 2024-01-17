@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-справ-долж-e",
+  "editForm": "i-i-s-proekt-справ-долж-e",
+  "external": false,
+  "caption": "Справочник должности",
+  "name": "IISProektСправДолжL",
+  "className": "СправДолжL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-справ-долж",
+      "modelProjection": "СправДолжL"
+    }
+  ]
+}

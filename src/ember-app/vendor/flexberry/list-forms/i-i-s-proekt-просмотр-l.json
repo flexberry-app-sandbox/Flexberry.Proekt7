@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-просмотр-e",
+  "editForm": "i-i-s-proekt-просмотр-e",
+  "external": false,
+  "caption": "Функция: Просмотр и контроль прихода/ухода ученика",
+  "name": "IISProektПросмотрL",
+  "className": "ПросмотрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-просмотр",
+      "modelProjection": "ПросмотрL"
+    }
+  ]
+}
