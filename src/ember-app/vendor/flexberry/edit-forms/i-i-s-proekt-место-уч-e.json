@@ -9,14 +9,6 @@
       "detailModelName": null
     },
     {
-      "master": null,
-      "displayAttributeName": null,
-      "required": false,
-      "relationName": "КлассУч",
-      "projection": "КлассУчL",
-      "detailModelName": null
-    },
-    {
       "master": "справУч",
       "displayAttributeName": "фио ученика",
       "required": true,

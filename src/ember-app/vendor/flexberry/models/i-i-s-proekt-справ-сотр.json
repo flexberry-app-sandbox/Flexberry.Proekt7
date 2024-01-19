@@ -20,6 +20,13 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "классУч",
+      "relatedTo": "i-i-s-proekt-класс-уч",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "справДолж",
       "relatedTo": "i-i-s-proekt-справ-долж",
       "inverse": null
@@ -59,6 +66,27 @@
           "name": "справДолж",
           "relatedTo": "i-i-s-proekt-справ-долж",
           "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "КлассУч",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "назв",
+              "caption": "Класс ученика",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "Класс ученика",
+          "name": "классУч",
+          "relatedTo": "i-i-s-proekt-класс-уч",
+          "inverse": null
         }
       ],
       "hasMany": []
@@ -94,6 +122,27 @@
           "caption": "Должности",
           "name": "справДолж",
           "relatedTo": "i-i-s-proekt-справ-долж",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "КлассУч",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "назв",
+              "caption": "Класс ученика",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Класс ученика",
+          "name": "классУч",
+          "relatedTo": "i-i-s-proekt-класс-уч",
           "inverse": null
         }
       ],

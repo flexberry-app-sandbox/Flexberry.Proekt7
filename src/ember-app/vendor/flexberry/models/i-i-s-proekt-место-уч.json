@@ -10,13 +10,6 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "классУч",
-      "relatedTo": "i-i-s-proekt-класс-уч",
-      "inverse": null
-    },
-    {
-      "polymorphic": false,
-      "presence": true,
       "name": "справСотр",
       "relatedTo": "i-i-s-proekt-справ-сотр",
       "inverse": null
@@ -77,33 +70,12 @@
           "name": "справСотр",
           "relatedTo": "i-i-s-proekt-справ-сотр",
           "inverse": null
-        },
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
-          "relationName": "КлассУч",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "назв",
-              "caption": "Класс ученика",
-              "hidden": false,
-              "index": 4
-            }
-          ],
-          "index": 3,
-          "type": "default",
-          "caption": "Класс ученика",
-          "name": "классУч",
-          "relatedTo": "i-i-s-proekt-класс-уч",
-          "inverse": null
         }
       ],
       "hasMany": [
         {
           "projectionName": "ТчМестоУчE",
-          "caption": "Сведения об ученике",
+          "caption": "Ученики класса",
           "name": "тчМестоУч",
           "relatedTo": "i-i-s-proekt-тч-место-уч",
           "inverse": null
@@ -156,27 +128,6 @@
           "caption": "Фио сотрудника",
           "name": "справСотр",
           "relatedTo": "i-i-s-proekt-справ-сотр",
-          "inverse": null
-        },
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
-          "relationName": "КлассУч",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [
-            {
-              "name": "назв",
-              "caption": "Класс ученика",
-              "hidden": false,
-              "index": 2
-            }
-          ],
-          "index": -1,
-          "type": "default",
-          "caption": "Класс ученика",
-          "name": "классУч",
-          "relatedTo": "i-i-s-proekt-класс-уч",
           "inverse": null
         }
       ],

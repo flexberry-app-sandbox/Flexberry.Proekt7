@@ -32,14 +32,19 @@ namespace IIS.Proekt
     [View("СправСотрE", new string[] {
             "Фио as \'Фио сотрудника\'",
             "СправДолж as \'Должности\'",
-            "СправДолж.Должность as \'Должности\'"})]
+            "СправДолж.Должность as \'Должности\'",
+            "КлассУч as \'Класс ученика\'",
+            "КлассУч.Назв as \'Класс ученика\'"})]
     [View("СправСотрL", new string[] {
             "Фио as \'Фио сотрудника\'",
-            "СправДолж.Должность as \'Должности\'"})]
+            "СправДолж.Должность as \'Должности\'",
+            "КлассУч.Назв as \'Класс ученика\'"})]
     public class СправСотр : ICSSoft.STORMNET.DataObject
     {
         
         private string fФио;
+        
+        private IIS.Proekt.КлассУч fКлассУч;
         
         private IIS.Proekt.СправДолж fСправДолж;
         
@@ -77,6 +82,40 @@ namespace IIS.Proekt
                 // *** Start programmer edit section *** (СправСотр.Фио Set end)
 
                 // *** End programmer edit section *** (СправСотр.Фио Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Справ сотр.
+        /// </summary>
+        // *** Start programmer edit section *** (СправСотр.КлассУч CustomAttributes)
+
+        // *** End programmer edit section *** (СправСотр.КлассУч CustomAttributes)
+        [PropertyStorage(new string[] {
+                "КлассУч"})]
+        [NotNull()]
+        public virtual IIS.Proekt.КлассУч КлассУч
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СправСотр.КлассУч Get start)
+
+                // *** End programmer edit section *** (СправСотр.КлассУч Get start)
+                IIS.Proekt.КлассУч result = this.fКлассУч;
+                // *** Start programmer edit section *** (СправСотр.КлассУч Get end)
+
+                // *** End programmer edit section *** (СправСотр.КлассУч Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СправСотр.КлассУч Set start)
+
+                // *** End programmer edit section *** (СправСотр.КлассУч Set start)
+                this.fКлассУч = value;
+                // *** Start programmer edit section *** (СправСотр.КлассУч Set end)
+
+                // *** End programmer edit section *** (СправСотр.КлассУч Set end)
             }
         }
         

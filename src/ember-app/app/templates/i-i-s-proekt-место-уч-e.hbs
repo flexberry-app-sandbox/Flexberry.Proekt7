@@ -63,32 +63,6 @@
     {{flexberry-validationmessage error=(v-get validationModel.справСотр.справДолж "должность" "message")}}
   </div>
   <div class="field">
-    <label>{{t "forms.i-i-s-proekt-место-уч-e.классУч-caption"}}</label>
-    {{flexberry-lookup
-      choose="showLookupDialog"
-      remove="removeLookupValue"
-      value=model.классУч
-      relationName="классУч"
-      projection="КлассУчL"
-      title=(t "forms.i-i-s-proekt-место-уч-e.классУч-caption")
-      readonly=readonly
-      componentName="классУчLookup"
-      class=(if (v-get validationModel "классУч" "isInvalid") "error")
-      data-test-i-i-s-proekt-место-уч-e-классУч=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel "классУч" "message")}}
-  </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=true
-      value=model.классУч.назв
-      class=(if (v-get validationModel.классУч "назв" "isInvalid") "error")
-      label=(t "forms.i-i-s-proekt-место-уч-e.классУч.назв-caption")
-      data-test-i-i-s-proekt-место-уч-e-классУч-назв=true
-    }}
-    {{flexberry-validationmessage error=(v-get validationModel.классУч "назв" "message")}}
-  </div>
-  <div class="field">
     <label>{{t "forms.i-i-s-proekt-место-уч-e.тчМестоУч-caption"}}</label>
     {{flexberry-groupedit
       componentName="тчМестоУчGroupEdit"

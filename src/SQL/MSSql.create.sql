@@ -8,6 +8,8 @@ CREATE TABLE [СправСотр] (
 
 	 [Фио] VARCHAR(255)  NULL,
 
+	 [КлассУч] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [СправДолж] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
@@ -80,8 +82,6 @@ CREATE TABLE [ТчМестоУч] (
 CREATE TABLE [МестоУч] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
-
-	 [КлассУч] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [СправСотр] UNIQUEIDENTIFIER  NOT NULL,
 
