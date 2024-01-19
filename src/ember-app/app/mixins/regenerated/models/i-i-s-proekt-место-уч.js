@@ -32,6 +32,9 @@ export let defineProjections = function (modelClass) {
       фио: attr('Фио сотрудника', { index: 1 }),
       справДолж: belongsTo('i-i-s-proekt-справ-долж', '', {
         должность: attr('Должность', { index: 2 })
+      }, { index: -1, hidden: true }),
+      классУч: belongsTo('i-i-s-proekt-класс-уч', '', {
+        назв: attr('Класс ученика', { index: 3 })
       }, { index: -1, hidden: true })
     }, { index: 0, displayMemberPath: 'фио сотрудника' }),
     тчМестоУч: hasMany('i-i-s-proekt-тч-место-уч', 'Ученики класса', {
@@ -55,6 +58,9 @@ export let defineProjections = function (modelClass) {
       фио: attr('Фио сотрудника', { index: 0 }),
       справДолж: belongsTo('i-i-s-proekt-справ-долж', '', {
         должность: attr('Должность', { index: 1 })
+      }, { index: -1, hidden: true }),
+      классУч: belongsTo('i-i-s-proekt-класс-уч', '', {
+        назв: attr('Класс ученика', { index: 2 })
       }, { index: -1, hidden: true })
     }, { index: -1, hidden: true })
   });
